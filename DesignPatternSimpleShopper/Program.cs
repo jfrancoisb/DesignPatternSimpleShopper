@@ -18,6 +18,7 @@ namespace DesignPatternSimpleShopper
             Application.SetCompatibleTextRenderingDefault(false);
 
             Application.Run(new ShopperForm());
+
         }
     }
 }
