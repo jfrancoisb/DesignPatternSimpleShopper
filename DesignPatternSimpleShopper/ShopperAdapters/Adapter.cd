@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DesignPatternsExample.ShopperControls.AvailableItemsToPurchaseControl" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAgAAAAgAAAAAAAAAAAAAAAgAAABCAAAAAA=</HashCode>
+      <FileName>ShopperControls\AvailableItemsToPurchaseControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperControls.SelectedSellingItemsControl" Collapsed="true">
+    <Position X="6" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAQCAAAAAAAAAAAAAAAAAAAAAAgAAAACIAAAAA=</HashCode>
+      <FileName>ShopperControls\SelectedSellingItemsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperControls.TaxControl" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperControls\TaxControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperAdapters.AvailableItemsToPurchaseComboBoxAdapter" Collapsed="true">
+    <Position X="1.75" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>RAEAAAEAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperAdapters\AvailableItemsToPurchaseComboBoxAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperAdapters.SelectedSellingItemsListBoxAdapter" Collapsed="true">
+    <Position X="5.75" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperAdapters\SelectedSellingItemsListBoxAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperAdapters.TaxTextBoxAdapter" Collapsed="true">
+    <Position X="9" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperAdapters\TaxTextBoxAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperMediators.FormShopperMediator">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <AssociationLine Name="mTaxControl" Type="DesignPatternsExample.ShopperControls.TaxControl" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="2.062" />
+        <Point X="10" Y="2.062" />
+        <Point X="10" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.7" Y="1.555" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mAvailableItemsToPurchaseControl" Type="DesignPatternsExample.ShopperControls.AvailableItemsToPurchaseControl">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-2.363" Y="2.147" Height="0.182" Width="2.316" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mSellingItemsControl" Type="DesignPatternsExample.ShopperControls.SelectedSellingItemsControl" FixedToPoint="true">
+      <Path>
+        <Point X="7.062" Y="2.502" />
+        <Point X="7.062" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.089" Y="0.598" Height="0.182" Width="1.583" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mSelectItemControl" Type="DesignPatternsExample.ShopperControls.SelectItemControl" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.5" />
+        <Point X="12.5" Y="1.5" />
+        <Point X="12.5" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="2.577" Y="2.145" Height="0.182" Width="1.618" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mFormControl" Type="DesignPatternsExample.ShopperControls.FormControl" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="0.75" />
+        <Point X="15" Y="0.75" />
+        <Point X="15" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="5.521" Y="2.886" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAoCAQAIAEAIAAAAAAAIAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperMediators\FormShopperMediator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mTaxControl" />
+      <Field Name="mAvailableItemsToPurchaseControl" />
+      <Field Name="mSellingItemsControl" />
+      <Field Name="mSelectItemControl" />
+      <Field Name="mFormControl" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperAdapters.SelectItemButtonAdapter" Collapsed="true">
+    <Position X="11.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ShopperAdapters\SelectItemButtonAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperControls.SelectItemControl" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ShopperControls\SelectItemControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperAdapters.FormAdapter" Collapsed="true">
+    <Position X="14" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ShopperAdapters\FormAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternsExample.ShopperControls.FormControl" Collapsed="true">
+    <Position X="14" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShopperControls\FormControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
