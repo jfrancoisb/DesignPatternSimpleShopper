@@ -13,12 +13,10 @@ namespace DesignPatternSimpleShopper.ShopperAdapters
 {
     public class SelectItemButtonAdapter : SelectItemControl
     {
-        public SelectItemButtonAdapter(Button button, Form form)
+        public SelectItemButtonAdapter(Button button)
             : base()
         {
             mButton = button;
-            mForm = form;
-
             button.Click += this.selectItemButton_Click;
         }
 
@@ -28,6 +26,5 @@ namespace DesignPatternSimpleShopper.ShopperAdapters
         }
 
         private Button mButton;
-        private Form mForm;
     }
 }

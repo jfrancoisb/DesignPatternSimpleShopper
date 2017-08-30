@@ -23,7 +23,7 @@ namespace DesignPatternSimpleShopper
             TaxControl lTaxControl = new TaxTextBoxAdapter(taxesCalculationTextBox);
             AvailableItemsToPurchaseControl lAvailableItemsToPurchaseControl = new AvailableItemsToPurchaseComboBoxAdapter(availableItemsToPurchase, this);
             SelectedSellingItemsControl lSelectedSellingItemsControl = new SelectedSellingItemsListBoxAdapter(sellingItemsListBox);
-            SelectItemControl lSelectItemControl = new SelectItemButtonAdapter(selectItemButton, this);
+            SelectItemControl lSelectItemControl = new SelectItemButtonAdapter(selectItemButton);
             FormControl lFormControl = new FormAdapter(this);
 
             ShopperMediator lShopperMediator = new FormShopperMediator(
